@@ -1,0 +1,3 @@
+CORNER_NAME: cmax_125c
+TCAD_GRD_FILE: /data/proj/library/SAED32nm/tech/star_rcxt/saed32nm_1p9m_Cmax.nxtgrd
+OPERATING_TEMPERATURE: 125
