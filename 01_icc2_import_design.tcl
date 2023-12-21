@@ -14,7 +14,9 @@ create_lib -technology $synopsys_tech_tf -ref_libs $ndm_files $nlib_dir/${design
 
 ### read verilog
 read_verilog -library ${design}_01_import.nlib -design ${design} -top $design $import_netlists
-
+link_block
+report_design_mismatch -verbose
+get_cells -hierarchical -filter is_unbound
 ### initialization script
 source scripts/initialization_settings.tcl
 
